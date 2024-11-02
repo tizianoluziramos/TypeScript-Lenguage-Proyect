@@ -20,6 +20,3 @@ Uso
 Licencia:
 
 Open-source license
-
-css
-Copiar código
