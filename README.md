@@ -7,12 +7,12 @@
 2. Coloca todo el contenido en la carpeta de tu proyecto.
 3. Agrega la siguiente línea en tu código:
 
-   ===========================typescript===========================
+      Importar en TypeScript: 
    import * as espanol from './importar.ts';
-   ================================================================
-            O si estás utilizando JavaScript:
+
+      O si estás utilizando JavaScript:
    import * as espanol from './importar.js';
-   ================================================================
+
 
 Uso
 1. Escribir espanol.*(el comando que quieres utilizar)
