@@ -2,7 +2,6 @@
 
 ## Instrucciones de Instalación
 
-### Paso 1
 1. Descomprime el archivo ZIP.
 2. Coloca todo el contenido en la carpeta de tu proyecto.
 3. Agrega la siguiente línea en tu código:
