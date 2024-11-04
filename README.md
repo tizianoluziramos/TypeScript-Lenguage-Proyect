@@ -13,7 +13,7 @@
    import * as espanol from './importar.js';
 
 
-Uso
+# Uso
 1. Escribir espanol.*(el comando que quieres utilizar)
 
 # Licencia:
