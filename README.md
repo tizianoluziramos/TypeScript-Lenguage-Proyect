@@ -17,6 +17,6 @@
 Uso
 1. Escribir espanol.*(el comando que quieres utilizar)
 
-#Licencia:
+# Licencia:
 
 Open-source license
