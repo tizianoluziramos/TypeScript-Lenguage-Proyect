@@ -1,0 +1,9 @@
+{
+  "name": "nombre-del-paquete",
+  "version": "1.0.0",
+  "description": "Descripción del proyecto",
+  "main": "index.js",
+  "dependencies": {
+    "node-hid": "^0.8.0"
+  }
+}

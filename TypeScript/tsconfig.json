@@ -1,0 +1,37 @@
+{
+  "name": "setes",
+  "version": "1.0.4",
+  "description": "Descripción de tu proyecto",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  },
+  "type": "module",
+  "compilerOptions": {
+    "target": "ES2018",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "allowImportingTsExtensions": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "baseUrl": "./",
+    "paths": {
+      "@modules/*": ["AddOns/*"]
+    }
+  },
+  "include": [
+    "src/**/*",
+    "@types/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
