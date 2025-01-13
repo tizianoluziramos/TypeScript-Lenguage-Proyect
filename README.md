@@ -1,21 +1,21 @@
-# JavaScript Y TypeScript en Español
+# JavaScript and TypeScript in every lenguage
 
-## Instrucciones de Instalación
+## Installation Instructions
 
-1. Descomprime el archivo ZIP.
-2. Coloca todo el contenido en la carpeta de tu proyecto.
-3. Agrega la siguiente línea en tu código:
+1. Unzip the ZIP file.
+2. Place all the contents in your project folder.
+3. Add the following line to your code:
+4. The format is for example: "FR", "ES", etc. (Specify the language you want to use).
+   
+      Import in TypeScript:  
+   import * as { lenguage } from 'tslproject'
 
-      Importar en TypeScript: 
-   import * as espanol from './importar.ts';
+      Or if you're using JavaScript(Unsupported version for only spanish):  
+   import * as spanish from './importar.js';
 
-      O si estás utilizando JavaScript:
-   import * as espanol from './importar.js';
+# Usage
+1. Write `spanish.*` (the command you want to use)
 
-
-# Uso
-1. Escribir espanol.*(el comando que quieres utilizar)
-
-# Licencia:
+# License:
 
 Open-source license
