@@ -22,3 +22,4 @@ Open-source license
 
 # Donate:
 PayPal: https://www.paypal.me/ANDREWSYSTEM
+Buy Me A Coffee: buymeacoffee.com/ANDREWSYSTEM
