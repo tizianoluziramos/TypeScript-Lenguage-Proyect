@@ -13,9 +13,6 @@
       Or if you're using JavaScript(Unsupported version for only spanish):  
    import * as spanish from './importar.js';
 
-# Usage
-1. Write `spanish.*` (the command you want to use)
-
 # License:
 
 Open-source license
