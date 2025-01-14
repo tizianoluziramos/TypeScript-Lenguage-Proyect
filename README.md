@@ -1,4 +1,4 @@
-# JavaScript and TypeScript in every lenguage
+# TypeScript in every lenguage
 
 ## Installation Instructions
 
