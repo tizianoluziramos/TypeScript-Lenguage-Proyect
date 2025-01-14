@@ -19,3 +19,6 @@
 # License:
 
 Open-source license
+
+# Donate:
+PayPal: https://www.paypal.me/ANDREWSYSTEM
