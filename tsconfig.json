@@ -13,6 +13,8 @@
   },
   "type": "module",
   "compilerOptions": {
+    "allowJs": true,
+    "checkJs": false,
     "target": "ES2018",
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
@@ -22,10 +24,7 @@
     "skipLibCheck": true,
     "outDir": "./dist",
     "rootDir": "./src",
-    "baseUrl": "./",
-    "paths": {
-      "@modules/*": ["AddOns/*"]
-    }
+    "baseUrl": "./"
   },
   "include": [
     "src/**/*",
