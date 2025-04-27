@@ -1,16 +1,21 @@
-import axios from 'axios';
+import axios from "axios";
 
-export async function obtenerPrecioBitcoin() {
+interface Resultado {
+  bitcoin: {
+    usd: number;
+  };
+}
+
+export async function obtenerPrecioBitcoin(): Promise<number | unknown> {
   try {
-    // Realizamos la solicitud a la API de CoinGecko
-    const response = await axios.get('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd');
+    const response = await axios.get<Resultado>(
+      "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd"
+    );
 
-    // Extraemos el precio del Bitcoin
-    const precioBitcoin = response.data.bitcoin.usd;
+    const precioBitcoin: number = response.data.bitcoin.usd;
 
     return precioBitcoin;
-
   } catch (error) {
-    return error
+    return error;
   }
 }
