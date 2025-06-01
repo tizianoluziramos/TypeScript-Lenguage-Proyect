@@ -1,5 +1,9 @@
 import axios from 'axios';
 
+interface RespostaConversao {
+  data: string; // Ajusta conforme a estrutura esperada da resposta
+}
+
 export async function converterPascalParaTypeScript(dados: string): Promise<string> {
   // Solicitar ao usuário para inserir o código Pascal
   const codigoPascal = dados
@@ -8,7 +12,7 @@ export async function converterPascalParaTypeScript(dados: string): Promise<stri
   const payloadCodificado = encodeURIComponent(codigoPascal); // Codificar o conteúdo
 
   try {
-    const resposta = await axios.post(url, { input: payloadCodificado });
+    const resposta: RespostaConversao = await axios.post(url, { input: payloadCodificado });
     return resposta.data;
   } catch (erro) {
     console.error('Erro:', erro);

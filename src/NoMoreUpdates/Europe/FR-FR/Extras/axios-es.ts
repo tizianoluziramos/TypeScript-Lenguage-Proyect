@@ -1,5 +1,5 @@
 // axios-fr.ts
-import axios, { AxiosResponse } from 'axios';
+import axios from 'axios';
 
 interface AxiosFr {
     obtenir(url: string): Promise<any>;
@@ -12,7 +12,7 @@ const axiosFr: AxiosFr = {
     // Fonction pour obtenir des données d'une URL
     obtenir: async (url: string): Promise<any> => {
         try {
-            const reponse: AxiosResponse = await axios.get(url);
+            const reponse = await axios.get(url); // Cambiado a tipo implícito
             return reponse.data;
         } catch (error) {
             console.error('Erreur lors de l\'obtention des données:', error);
@@ -23,7 +23,7 @@ const axiosFr: AxiosFr = {
     // Fonction pour envoyer des données à une URL
     envoyer: async (url: string, donnees: any): Promise<any> => {
         try {
-            const reponse: AxiosResponse = await axios.post(url, donnees);
+            const reponse = await axios.post(url, donnees); // Cambiado a tipo implícito
             return reponse.data;
         } catch (error) {
             console.error('Erreur lors de l\'envoi des données:', error);
@@ -34,7 +34,7 @@ const axiosFr: AxiosFr = {
     // Fonction pour mettre à jour des données à une URL
     mettreAJour: async (url: string, donnees: any): Promise<any> => {
         try {
-            const reponse: AxiosResponse = await axios.put(url, donnees);
+            const reponse = await axios.put(url, donnees); // Cambiado a tipo implícito
             return reponse.data;
         } catch (error) {
             console.error('Erreur lors de la mise à jour des données:', error);
@@ -45,7 +45,7 @@ const axiosFr: AxiosFr = {
     // Fonction pour supprimer des données à une URL
     supprimer: async (url: string): Promise<any> => {
         try {
-            const reponse: AxiosResponse = await axios.delete(url);
+            const reponse = await axios.delete(url); // Cambiado a tipo implícito
             return reponse.data;
         } catch (error) {
             console.error('Erreur lors de la suppression des données:', error);

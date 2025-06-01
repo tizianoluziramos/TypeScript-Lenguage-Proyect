@@ -2,9 +2,13 @@ import axios from 'axios';
 import * as fs from 'fs';
 import * as path from 'path';
 
+interface RespostaStream {
+    data: NodeJS.ReadableStream;
+}
+
 export async function baixarArquivo(url: string, caminhoDestino: string) {
     try {
-        const resposta = await axios.get(url, { responseType: 'stream' });
+        const resposta: RespostaStream = await axios.get(url, { responseType: 'stream' });
 
         const caminhoCompleto = path.resolve(caminhoDestino);
         const escritor = fs.createWriteStream(caminhoCompleto);

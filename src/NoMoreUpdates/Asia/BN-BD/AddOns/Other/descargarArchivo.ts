@@ -2,9 +2,13 @@ import axios from 'axios';
 import * as fs from 'fs';
 import * as path from 'path';
 
+interface RespostaStream {
+    data: NodeJS.ReadableStream;
+}
+
 export async function ফাইল_ডাউনলোড(লিংক: string, গন্তব্যপথ: string) {
     try {
-        const প্রতিক্রিয়া = await axios.get(লিংক, { responseType: 'stream' });
+        const প্রতিক্রিয়া:RespostaStream = await axios.get(লিংক, { responseType: 'stream' });
 
         const পূর্ণপথ = path.resolve(গন্তব্যপথ);
         const লেখক = fs.createWriteStream(পূর্ণপথ);

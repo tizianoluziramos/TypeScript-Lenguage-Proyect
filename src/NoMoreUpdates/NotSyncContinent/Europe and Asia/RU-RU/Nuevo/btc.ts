@@ -1,16 +1,24 @@
 import axios from 'axios';
 
-export async function получитьЦенуБиткойна() {
-  try {
-    // Выполняем запрос к API CoinGecko
-    const response = await axios.get('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd');
+// Интерфейс для структуры данных ответа
+interface ОтветЦенаБиткойна {
+    bitcoin: {
+        usd: number;
+    };
+}
 
-    // Извлекаем цену биткойна
-    const ценаБиткойна = response.data.bitcoin.usd;
+export async function получитьЦенуБиткойна(): Promise<number | Error> {
+    try {
+        // Выполняем запрос к API CoinGecko
+        const response = await axios.get<ОтветЦенаБиткойна>('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd');
 
-    return ценаБиткойна;
+        // Извлекаем цену биткойна
+        const ценаБиткойна = response.data.bitcoin.usd;
 
-  } catch (error) {
-    return error;
-  }
+        return ценаБиткойна;
+
+    } catch (error) {
+        console.error('Ошибка при получении цены биткойна:', error);
+        return new Error('Не удалось получить цену биткойна');
+    }
 }

@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export async function convertirPythonEnTypeScript(donnees: any): Promise<string> {
+export async function convertirPythonEnTypeScript(donnees: any): Promise<unknown> {
   // Demander à l'utilisateur de saisir le code Python
   const codePython = donnees;
 

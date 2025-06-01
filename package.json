@@ -14,7 +14,9 @@
     "node-fetch": "^3.3.2",
     "node-hid": "^3.1.2",
     "ssh2-sftp-client": "^11.0.0",
-    "uuid": "^11.0.5"
+    "uuid": "^11.0.5",
+    "os": "^0.1.1",
+    "pdf-parse": "^1.1.1"
   },
   "repository": {
     "type": "git",

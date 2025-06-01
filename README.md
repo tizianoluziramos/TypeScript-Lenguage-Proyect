@@ -8,7 +8,7 @@
 4. The format is for example: "FR", "ES", etc. (Specify the language you want to use).
    
       Import in TypeScript:  
-   import * as yourlenguage from 'tslproject'
+   import * as lenguage from 'tslproject'
 
       Or if you're using JavaScript(Unsupported version for only spanish):  
    import * as spanish from './importar.js';

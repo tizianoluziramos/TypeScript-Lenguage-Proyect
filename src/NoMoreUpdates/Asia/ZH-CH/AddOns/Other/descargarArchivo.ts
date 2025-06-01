@@ -9,7 +9,8 @@ export async function 下载文件(url: string, 目标路径: string) {
         const 完整路径 = path.resolve(目标路径);
         const 写入器 = fs.createWriteStream(完整路径);
 
-        响应.data.pipe(写入器);
+        // 确保响应数据被视为 NodeJS.ReadableStream
+        (响应.data as NodeJS.ReadableStream).pipe(写入器);
 
         写入器.on('finish', () => {
             console.log(`文件已下载到: ${完整路径}`);

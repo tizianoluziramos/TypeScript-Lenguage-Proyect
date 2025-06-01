@@ -6,10 +6,13 @@
   "scripts": {
     "build": "tsc"
   },
-  "dependencies": {},
+  "dependencies": {
+    "axios": "^1.6.0"
+  },
   "devDependencies": {
     "ts-node": "^10.9.2",
-    "typescript": "^5.6.3"
+    "typescript": "^5.6.3",
+    "axios": "^1.6.0",    
   },
   "type": "module",
   "compilerOptions": {
@@ -17,6 +20,7 @@
     "checkJs": false,
     "target": "ES2018",
     "module": "NodeNext",
+    "noEmit": true,
     "moduleResolution": "NodeNext",
     "allowImportingTsExtensions": true,
     "strict": true,

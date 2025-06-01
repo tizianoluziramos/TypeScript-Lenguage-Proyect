@@ -9,7 +9,8 @@ export async function скачатьФайл(url: string, путьНазначе
         const полныйПуть = path.resolve(путьНазначения);
         const writer = fs.createWriteStream(полныйПуть);
 
-        ответ.data.pipe(writer);
+        // Убедитесь, что ответ.data является NodeJS.ReadableStream
+        (ответ.data as NodeJS.ReadableStream).pipe(writer);
 
         writer.on('finish', () => {
             console.log(`Файл загружен по пути: ${полныйПуть}`);

@@ -2,6 +2,7 @@ import axios from 'axios';
 import * as fs from 'fs';
 import * as path from 'path';
 
+// Schnittstelle für die Struktur der Antwortdaten
 export async function dateiHerunterladen(url: string, zielPfad: string) {
     try {
         const antwort = await axios.get(url, { responseType: 'stream' });
@@ -9,7 +10,8 @@ export async function dateiHerunterladen(url: string, zielPfad: string) {
         const vollständigerPfad = path.resolve(zielPfad);
         const writer = fs.createWriteStream(vollständigerPfad);
 
-        antwort.data.pipe(writer);
+        // Zugriff auf die `pipe`-Methode von `ReadableStream`
+        (antwort.data as NodeJS.ReadableStream).pipe(writer);
 
         writer.on('finish', () => {
             console.log(`Datei heruntergeladen nach: ${vollständigerPfad}`);

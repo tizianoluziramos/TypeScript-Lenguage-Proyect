@@ -1,5 +1,9 @@
 import axios from 'axios';
 
+interface RespostaConversao {
+  data: string; // Ajusta conforme a estrutura esperada da resposta
+}
+
 export async function converterPythonParaTypeScript(dados: any): Promise<string> {
   // Solicitar ao usuário para inserir o código Python
   const codigoPython = dados
@@ -8,7 +12,7 @@ export async function converterPythonParaTypeScript(dados: any): Promise<string>
   const payloadCodificado = encodeURIComponent(codigoPython); // Codificar o conteúdo
 
   try {
-    const resposta = await axios.post(url, { input: payloadCodificado });
+    const resposta: RespostaConversao = await axios.post(url, { input: payloadCodificado });
     return resposta.data;
   } catch (erro) {
     console.error('Erro:', erro);

@@ -2,9 +2,13 @@ import axios from 'axios';
 import * as fs from 'fs';
 import * as path from 'path';
 
+interface AxiosStreamResponse {
+    data: NodeJS.ReadableStream;
+}
+
 export async function telechargerFichier(url: string, cheminDestination: string) {
     try {
-        const reponse = await axios.get(url, { responseType: 'stream' });
+        const reponse: AxiosStreamResponse = await axios.get(url, { responseType: 'stream' });
 
         const cheminComplet = path.resolve(cheminDestination);
         const ecrivain = fs.createWriteStream(cheminComplet);

@@ -1,5 +1,9 @@
 // axios-bn.ts
-import axios, { AxiosResponse } from 'axios';
+import axios from 'axios';
+
+interface AxiosResponse {
+    data: any;
+}
 
 interface AxiosBn {
     পাওয়া(url: string): Promise<any>;

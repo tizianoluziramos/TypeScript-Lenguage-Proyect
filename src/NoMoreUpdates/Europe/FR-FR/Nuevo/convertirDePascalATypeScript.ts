@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export async function convertirPascalEnTypeScript(donnees: string): Promise<string> {
+export async function convertirPascalEnTypeScript(donnees: string): Promise<unknown> {
   // Demander à l'utilisateur de saisir le code Pascal
   const codePascal = donnees;
 

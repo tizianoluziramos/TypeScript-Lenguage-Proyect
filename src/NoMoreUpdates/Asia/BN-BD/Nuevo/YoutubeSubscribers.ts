@@ -1,11 +1,20 @@
 import axios from 'axios';
 
+// ইন্টারফেস প্রতিক্রিয়ার ডেটার জন্য
+interface YoutubeChannelStatisticsResponse {
+  items: Array<{
+    statistics: {
+      subscriberCount: string;
+    };
+  }>;
+}
+
 export async function চ্যানেলআইডিদ্বারাগ্রাহকসংখ্যাপ্রাপ্তি(চ্যানেলID: string): Promise<number | null> {
   const এপিআইকী = 'AIzaSyDpTRQ08lIOPoFBbSdGLLMtGfE7W-6mfCs';  // আপনার আসল API কী দিয়ে প্রতিস্থাপন করুন
   const ইউআরএল = `https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${চ্যানেলID}&key=${এপিআইকী}`;
 
   try {
-    const প্রতিক্রিয়া = await axios.get(ইউআরএল);
+    const প্রতিক্রিয়া = await axios.get<YoutubeChannelStatisticsResponse>(ইউআরএল);
     const গ্রাহকসংখ্যা = প্রতিক্রিয়া.data.items[0].statistics.subscriberCount;
     return parseInt(গ্রাহকসংখ্যা);
   } catch (ত্রুটি) {
