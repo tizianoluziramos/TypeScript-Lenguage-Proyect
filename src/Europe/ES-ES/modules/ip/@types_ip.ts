@@ -1,5 +1,3 @@
-const ip = require('./ip.js') as IpModule;
-
 interface IpModule {
   aBuffer(ip: string, buff?: Buffer, offset?: number): Buffer;
   aCadena(buff: Buffer, offset?: number, longitud?: number): string;
@@ -20,5 +18,7 @@ interface IpModule {
   direccion(nombre?: string, familia?: string | number): string | undefined;
   desdeLongitud(ip: string): number;
 }
+
+const ip = require('./ip.js') as IpModule;
 
 export default ip;

@@ -1,7 +1,7 @@
 import axios from 'axios';
 import * as fs from 'fs';
 import * as path from 'path';
-import { ReadableBase } from 'stream';
+import { Readable } from 'stream';
 
 export async function descargarArchivo(url: string, rutaDestino: string) {
     try {
@@ -10,7 +10,7 @@ export async function descargarArchivo(url: string, rutaDestino: string) {
         const rutaCompleta = path.resolve(rutaDestino);
         const writer = fs.createWriteStream(rutaCompleta);
     
-        (respuesta.data as ReadableBase);
+        (respuesta.data as Readable).pipe(writer);
 
         writer.on('finish', () => {
             console.log(`Archivo descargado en: ${rutaCompleta}`);

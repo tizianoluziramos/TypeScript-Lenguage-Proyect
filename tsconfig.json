@@ -1,11 +1,8 @@
 {
   "name": "TypeScript Language Project",
-  "version": "3.0.5",
+  "version": "3.0.6",
   "description": "TypeScript Language Project",
   "main": "src/index.ts",
-  "scripts": {
-    "build": "tsc"
-  },
   "dependencies": {
     "axios": "^1.6.0"
   },
