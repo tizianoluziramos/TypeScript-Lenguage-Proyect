@@ -1,7 +1,7 @@
 {
-  "name": "setes",
-  "version": "1.0.4",
-  "description": "Descripción de tu proyecto",
+  "name": "TypeScript Language Project",
+  "version": "3.0.4",
+  "description": "TypeScript Language Project",
   "main": "src/index.ts",
   "scripts": {
     "build": "tsc"

@@ -1,4 +1,3 @@
 export function creditosDeTypeScriptEspanol(): void {
-    console.log("Tiziano Luzi Ramos")
-    console.log("ChatGPT(El 3% del codigo)");
+    console.log("Tiziano Tomas Luzi Ramos");
 }

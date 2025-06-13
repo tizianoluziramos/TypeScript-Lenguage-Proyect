@@ -10,68 +10,63 @@
 
 // Creation Date: No vember 2024
 
-import { Si } from "./IF/if.ts";
-import { si } from "./IF/helper.ts";
-import { consola } from "./console.ts";
-import { bucles } from "./for.ts";
-import { mientras } from "./while.ts";
-import { caso } from "./switch.ts";
-import { intentarCapturar } from "./try.ts";
-import { definirTimeout } from "./setTimeout.ts";
-import { promesa } from "./Promise.ts";
-import momentEs from "./Extras/moment-es.ts";
-import axiosEs from "./Extras/axios-es.ts";
-import lodashEs from "./Extras/lodash-es.ts";
-import streamEnEspanol from './Extras/stream-web-es.ts';
-import sistemaOperativo, { obtenerInformacionSistema } from './Extras/os-es.ts'
-
-import * as herramientasDeArrays from "./arrayUtil.ts";
-
-import { buscarObjeto } from "./find.ts";
-import rlsUtil from "./rlsUtils.ts";
-import { creditosDeTypeScriptEspanol } from "./Extras/Creditos.ts";
-import { caracterEn } from './charAt.ts';
-import { retornar } from "./return.ts"
-//ADDONS
-import { validarTipo } from "./AddOns/validarTipo.ts"
-import { consologuear } from "./AddOns/Consologuear.ts"
-import { ejecutarScriptPython } from "./AddOns/RunPython.ts"
-import { definirVariable, variables } from "./const.ts"
-import { fsEs } from "./AddOns/fsEs.ts"
-import { factorial } from './AddOns/Others/Factorial.ts'
-import { invertirCadena } from "./AddOns/Others/InvertirCadena.ts"
-import { invertirArray } from './AddOns/Others/invertirarray.ts'
-import { contarVocales } from './AddOns/Others/contarVocales.ts'
-import { esAnagrama } from './AddOns/Others/esAnagrama.ts'
-import { esPalindromo } from './AddOns/Others/esPalindromo.ts'
-import { convertirABinario } from './AddOns/Others/convertirDeNumeroABinario.ts'
-import { validarTarjeta } from './AddOns/Others/validarTarjeta.ts'
-import { pruebasScrum } from './AddOns/Others/pruebaDeScrum.ts'
-import { generateQR } from './AddOns/Others/generarQR.ts'
-import * as convertidorDeUnidades from './AddOns/Others/convertidorDeUnidades.ts'
-import { iniciarSesion, GestorDeClaves } from './AddOns/Others/LoginSystems/login1.ts'
-import { GenerarClavesDeWindows95} from './AddOns/Others/Activator/Windows95.ts'
-import { conectarSFTP } from './AddOns/Other/AccesoFTP.ts'
-import { leerArchivoWord } from './AddOns/Other/leerArchivoWord.ts'
-import { leerPDF } from './AddOns/Other/leerArchivoPDF.ts'
-import { convertirEXEaHexadecimal } from './AddOns/Other/convertirEXEaHexadecimal.ts'
-import { leerProcesoEnLaMemoria } from './AddOns/Other/leerMemoriaRAM.ts'
-import { crearServidor } from './AddOns/Other/crearServidor.ts'
-import { descargarArchivo } from './AddOns/Other/descargarArchivo.ts'
-import { preguntarAGPT,preguntarRed,entrenarRed } from './Update/CustomIASystem.ts'
-import * as Formula1 from './Update/f1/importar.ts'
-import { GamepadEs, GamepadEsInfraestructure } from './Nuevo/GamepadToKeyboard.ts'
-import { convertirPascalATypeScript } from './Nuevo/convertirDePascalATypeScript.ts'
-import { convertirPythonATypeScript } from './Nuevo/convertirDePythonATypeScript.ts'
-import { obtenerPrecioBitcoin } from './Nuevo/btc.ts'
-import { obtenerSuscriptoresPorId } from './Nuevo/YoutubeSubscribers.ts'
-import { romanoAEspanol } from './Nuevo/romanoAEspanol.ts'
-import { pausarCodigo } from './Nuevo/pausarCodigo.ts' 
-import { fechaYHora } from './Nuevo/fechaActual.ts'
-//Nuevo 
-import { documento, CSSStyle } from './NuevoNuevo/document.ts'
-import { ip as ipEs } from './NuevoNuevo/@types_ip.ts'
-import { Matematicas } from "./Update/Math.ts";
+import { Si } from "./ES-ES/Vanilla/if.ts";
+import { si } from "./ES-ES/Vanilla/helper.ts";
+import { consola } from "./ES-ES/Vanilla/console.ts";
+import { bucles } from "./ES-ES/Vanilla/for.ts";
+import { mientras } from "./ES-ES/Vanilla/while.ts";
+import { caso } from "./ES-ES/Vanilla/switch.ts";
+import { intentarCapturar } from "./ES-ES/Vanilla/try.ts";
+import { definirTimeout } from "./ES-ES/Vanilla/setTimeout.ts";
+import { promesa } from "./ES-ES/Vanilla/Promise.ts";
+import momentEs from "./ES-ES/modules/moment-es.ts";
+import axiosEs from "./ES-ES/modules/axios-es.ts";
+import lodashEs from "./ES-ES/modules/lodash-es.ts";
+import streamEnEspanol from './ES-ES/modules/stream-web-es.ts';
+import sistemaOperativo, { obtenerInformacionSistema } from './ES-ES/modules/os-es.ts'
+import * as herramientasDeArrays from "./ES-ES/tools/arrayUtil.ts";
+import { buscarObjeto } from "./ES-ES/Vanilla/find.ts";
+import rlsUtil from "./ES-ES/modules/rlsUtils.ts";
+import { creditosDeTypeScriptEspanol } from "./ES-ES/Extras/Creditos.ts";
+import { caracterEn } from './ES-ES/Vanilla/charAt.ts';
+import { retornar } from "./ES-ES/Vanilla/return.ts"
+import { validarTipo } from "./ES-ES/tools/validarTipo.ts"
+import { ejecutarScriptPython } from "./ES-ES/Extras/PythonRunner/RunPython.ts"
+import { definirVariable, variables } from "./ES-ES/Vanilla/const.ts"
+import { fsEs } from "./ES-ES/modules/fsEs.ts"
+import { factorial } from './ES-ES/tools/Factorial.ts'
+import { invertirCadena } from "./ES-ES/tools/InvertirCadena.ts"
+import { invertirArray } from './ES-ES/tools/invertirarray.ts'
+import { contarVocales } from './ES-ES/tools/contarVocales.ts'
+import { esAnagrama } from './ES-ES/tools/esAnagrama.ts'
+import { esPalindromo } from './ES-ES/tools/esPalindromo.ts'
+import { convertirABinario } from './ES-ES/tools/converters/convertirDeNumeroABinario.ts'
+import { validarTarjeta } from './ES-ES/tools/validarTarjeta.ts'
+import { pruebasScrum } from './ES-ES/Extras/pruebaDeScrum.ts'
+import { generateQR } from './ES-ES/tools/generarQR.ts'
+import * as convertidorDeUnidades from './ES-ES/tools/converters/convertidorDeUnidades.ts'
+import { iniciarSesion, GestorDeClaves } from './ES-ES/tools/KeyManagement.ts'
+import { GenerarClavesDeWindows95} from './ES-ES/Extras/win95keygen.ts'
+import { conectarSFTP } from './ES-ES/modules/AccesoFTP.ts'
+import { leerArchivoWord } from './ES-ES/modules/leerArchivoWord.ts'
+import { leerPDF } from './ES-ES/modules/leerArchivoPDF.ts'
+import { convertirEXEaHexadecimal } from './ES-ES/tools/converters/convertirEXEaHexadecimal.ts'
+import { leerProcesoEnLaMemoria } from './ES-ES/modules/leerMemoriaRAM.ts'
+import { crearServidor } from './ES-ES/modules/crearServidor.ts'
+import { descargarArchivo } from './ES-ES/tools/descargarArchivo.ts'
+import { preguntarAGPT,preguntarRed,entrenarRed } from './ES-ES/Extras/CustomIASystem.ts'
+import * as Formula1 from './ES-ES/tools/APIS/import.ts'
+import { GamepadEs, GamepadEsInfraestructure } from './ES-ES/modules/GamepadToKeyboard.ts'
+import { convertirPascalATypeScript } from './ES-ES/tools/converters/convertirDePascalATypeScript.ts'
+import { convertirPythonATypeScript } from './ES-ES/tools/converters/convertirDePythonATypeScript.ts'
+import { obtenerPrecioBitcoin } from './ES-ES/tools/APIS/btc.ts'
+import { obtenerSuscriptoresPorId } from './ES-ES/tools/APIS/YoutubeSubscribers.ts'
+import { romanoAEspanol } from './ES-ES/tools/romanoAEspanol.ts'
+import { pausarCodigo } from './ES-ES/Extras/pausarCodigo.ts' 
+import { fechaYHora } from './ES-ES/tools/fechaActual.ts'
+import { documento, CSSStyle } from './ES-ES/Vanilla/document.ts'
+import ip from './ES-ES/modules/ip/@types_ip.ts'
+import { Matematicas } from "./ES-ES/Vanilla/Math.ts";
 
 export {
   si,
@@ -92,14 +87,11 @@ export {
   sistemaOperativo,
   caracterEn,
   retornar,
-  //ADDONS
   validarTipo,
-  consologuear,
   ejecutarScriptPython,
   definirVariable,
   variables,
   fsEs,
-  //ADDONS.OTHERS
   factorial,
   invertirCadena,
   invertirArray,
@@ -136,11 +128,9 @@ export {
   pausarCodigo,
   fechaYHora,
   creditosDeTypeScriptEspanol,
-  //Nuevo
   documento,
   CSSStyle,
-  ipEs,
+  ip as ipEs,
   herramientasDeArrays,
   Matematicas
-  //Importar otro mas, ingrese con comas
 };
