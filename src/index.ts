@@ -1,37 +1,67 @@
-// Project Credits
-// Main Developer:
-// Name: Tiziano Tomas Luzi Ramos
-// Email: tizianoluziramos@gmail.com
-// GitHub: https://github.com/tizianoluziramos
-// NPM: https://www.npmjs.com/~tizianoluziramos
-// License:
-// This project is licensed under the MIT License.
-// Creation Date: January 2024
+export * from "./Vanilla/IF/helper.ts";
+export * from "./Vanilla/IF/helper.ts";
+export * from "./Vanilla/console.ts";
+export * from "./Vanilla/for.ts";
+export * from "./Vanilla/while.ts";
+export * from "./Vanilla/switch.ts";
+export * from "./Vanilla/try.ts";
+export * from "./Vanilla/setTimeout.ts";
+export * from "./Vanilla/Promise.ts";
+export * from "./Vanilla/instanceof.ts";
+export * from "./Vanilla/typeof.ts";
+export * from "./Vanilla/find.ts";
+export * from "./Vanilla/charAt.ts";
+export * from "./Vanilla/return.ts";
+export * from "./Vanilla/document.ts";
+export * from "./Vanilla/const.ts";
+export * from "./Vanilla/Math.ts";
 
-export * as es from './Europe/ES-ES/index.ts'
-export * as fr from './Optional/Europe/FR-FR/index.ts'
-export * as bn from './Optional/Asia/BN-BD/index.ts'
-export * as ru from './Optional/Europe/RU-RU/index.ts'
-export * as de from './Optional/Europe/DE-DE/index.ts'
-export * as pt from './Optional/Europe/PT-PT/index.ts'
-export * as zh from './Optional/Asia/ZH-CH/index.ts'
+export * from "./modules/moment-es.ts";
+export * from "./modules/axios-es.ts";
+export * from "./modules/lodash-es.ts";
+export * from "./modules/stream-web-es.ts";
+export * from "./modules/os-es.ts";
+export * from "./modules/rlsUtils.ts";
+export * from "./modules/fsEs.ts";
+export * from "./modules/AccesoFTP.ts";
+export * from "./modules/GamepadToKeyboard.ts";
+export * from "./modules/crearServidor.ts";
+export * from "./modules/ip/@types_ip.ts";
 
-import * as es from './Europe/ES-ES/index.ts'
-import * as fr from './Optional/Europe/FR-FR/index.ts'
-import * as bn from './Optional/Asia/BN-BD/index.ts'
-import * as ru from './Optional/Europe/RU-RU/index.ts'
-import * as de from './Optional/Europe/DE-DE/index.ts'
-import * as pt from './Optional/Europe/PT-PT/index.ts'
-import * as zh from './Optional/Asia/ZH-CH/index.ts'
+export * from "./Extras/win95keygen.ts";
+export * from "./Extras/win98keygen.ts";
+export * from "./Extras/Creditos.ts";
+export * from "./Extras/PythonRunner/run.ts";
+export * from "./Extras/pruebaDeScrum.ts";
+export * from "./Extras/pausarCodigo.ts";
+export * from "./Extras/CustomIASystem.ts";
 
-export default {
-  es,
-  fr,
-  bn,
-  ru,
-  de,
-  pt,
-  zh,
-}
+export * from "./tools/arrayUtil.ts";
+export * from "./tools/Validators/validarTipo.ts";
+export * from "./tools/Validators/Factorial.ts";
+export * from "./tools/converters/InvertirCadena.ts";
+export * from "./tools/converters/invertirarray.ts";
+export * from "./tools/Validators/contarVocales.ts";
+export * from "./tools/Validators/esAnagrama.ts";
+export * from "./tools/Validators/esPalindromo.ts";
+export * from "./tools/converters/convertirDeNumeroABinario.ts";
+export * from "./tools/Validators/validarTarjeta.ts";
+export * from "./tools/APIS/generarQR.ts";
+export * from "./tools/converters/convertidorDeUnidades.ts";
+export * from "./tools/Readers/KeyManagement.ts";
+export * from "./tools/Readers/leerArchivoWord.ts";
+export * from "./tools/Readers/leerArchivoPDF.ts";
+export * from "./tools/converters/convertirEXEaHexadecimal.ts";
+export * from "./tools/Readers/leerMemoriaRAM.ts";
+export * from "./tools/descargarArchivo.ts";
+export * from "./tools/APIS/F1/index.ts";
+export * from "./tools/converters/convertirDePascalATypeScript.ts";
+export * from "./tools/converters/convertirDePythonATypeScript.ts";
+export * from "./tools/APIS/btc.ts";
+export * from "./tools/APIS/YoutubeSubscribers.ts";
+export * from "./tools/converters/romanoAEspanol.ts";
+export * from "./tools/fechaActual.ts";
+export * from "./tools/HTML/htmlUtils.ts";
+export * from "./tools/converters/sanitizarJSON.ts";
 
 process.exit(0);
