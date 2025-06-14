@@ -1,6 +1,6 @@
 {
   "name": "TypeScript Language Project",
-  "version": "3.0.6",
+  "version": "3.1.0",
   "description": "TypeScript Language Project",
   "main": "src/index.ts",
   "dependencies": {
