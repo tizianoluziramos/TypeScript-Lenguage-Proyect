@@ -15,6 +15,7 @@ export * from "./Vanilla/return.ts";
 export * from "./Vanilla/document.ts";
 export * from "./Vanilla/const.ts";
 export * from "./Vanilla/Math.ts";
+export * from "./Vanilla/arrayUtil.ts";
 
 export * from "./modules/moment-es.ts";
 export * from "./modules/axios-es.ts";
@@ -36,7 +37,6 @@ export * from "./Extras/pruebaDeScrum.ts";
 export * from "./Extras/pausarCodigo.ts";
 export * from "./Extras/CustomIASystem.ts";
 
-export * from "./tools/arrayUtil.ts";
 export * from "./tools/Validators/validarTipo.ts";
 export * from "./tools/Validators/Factorial.ts";
 export * from "./tools/converters/InvertirCadena.ts";
@@ -63,5 +63,9 @@ export * from "./tools/converters/romanoAEspanol.ts";
 export * from "./tools/fechaActual.ts";
 export * from "./tools/HTML/htmlUtils.ts";
 export * from "./tools/converters/sanitizarJSON.ts";
+export * from "./tools/HTML/jsxAJavaScript.ts";
+export * from "./tools/HTML/obtenerPosicionCursor.ts";
+export * from "./tools/HTML/obtenerPosicionCursor.ts";
+export * from "./tools/Terminal.ts";
 
 process.exit(0);
